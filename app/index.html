@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 Trophies</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title-block">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a guide in our own words for each, a roadmap to the platinum, and a checklist that saves in your browser.</p>
+  </div>
+  <div class="progress-block" aria-label="Progress">
+    <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="bar"><div id="progressFill" class="fill"></div></div>
+    <p class="grade-counts" id="gradeCounts"></p>
+    <p class="missable-callout" id="missableCallout"></p>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button id="tabChecklist" type="button" class="tab active">Checklist</button>
+  <button id="tabRoadmap" type="button" class="tab">Roadmap to Platinum</button>
+</nav>
+
+<section class="toolbar" aria-label="Filters">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name, mission, keyword…" autocomplete="off"></label>
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectible">Collectibles</option>
+      <option value="activity">Activities</option>
+      <option value="side">Side quests</option>
+      <option value="crime">Crime</option>
+      <option value="exploration">Exploration</option>
+      <option value="misc">Misc</option>
+    </select>
+  </label>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Status
+    <select id="status">
+      <option value="all">All</option>
+      <option value="earned">Earned</option>
+      <option value="todo">Not earned yet</option>
+    </select>
+  </label>
+  <label class="check"><input id="spoilers" type="checkbox" checked> Hide story spoilers</label>
+  <span class="spacer"></span>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button id="reset" type="button" class="quiet">Reset</button>
+</section>
+
+<main>
+  <section id="viewChecklist" class="view">
+    <p id="resultCount" class="result-count"></p>
+    <ol id="list" class="trophy-list"></ol>
+  </section>
+  <section id="viewRoadmap" class="view" hidden>
+    <div id="roadmap"></div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Every guide names its sources beside it. Trophy names, descriptions and grades are as PlayStation publishes them, as listed by Exophase and PowerPyx. Guides were written 20 November 2026, the day after the game released, from the official list and the early published guides cited per trophy; where a detail is still unconfirmed, the guide says so. No guide text is copied from any source.</p>
+  <p><strong>Tips.</strong> Cheats disable trophies and saving — keep them off on a platinum run. There is no mission replay, so keep a manual save at the start and end of each chapter (15 manual slots). One playthrough is enough, and there is no online trophy.</p>
+  <p>Works fully offline: this page loads only its own files and saves your ticks in this browser (localStorage). Export downloads a JSON file you can import back later.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
